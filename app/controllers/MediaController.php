@@ -100,7 +100,7 @@ final class MediaController  extends Controller
             header('Location: auth/login/');
             exit();
         }else{
-            $media = $this->media_db_model->getAllProducts();
+            $media = $this->media_db_model->getAllMedias();
             // Assign variables to Smarty
             $this->smarty->assign('page_title', 'Media List | ipOnline');
             $this->smarty->assign('root_link', ROOT);

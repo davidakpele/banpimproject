@@ -28,7 +28,7 @@ class MediaRepository{
 		return (!empty($stmt)) ? $stmt : '0';	
     }
    
-     public function getAllProducts(){
+     public function getAllMedias(){
         $this->db_connection->query(/** @lang text */"SELECT * FROM media  ORDER BY created_time DESC");
         $stmt = $this->db_connection->fetch_assoc();
 		return (!empty($stmt)) ? $stmt : '';
